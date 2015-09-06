@@ -1,7 +1,8 @@
 #include "Point.h"
+#include <cmath>
 
 // Default constructor
-// Initializes the point to (0.0, 0.0)
+// Initializes the point to (0.0, 0.0, 0.0)
 Point::Point() {
   x = 0.0;
   y = 0.0;
@@ -50,4 +51,8 @@ double Point::getY() {
 
 double Point::getZ() {
   return z;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+double Point::distanceTo(Point &test){               //function used to find distance from point (x1,y1,z1) to point (x2,y2,z2)
+  return sqrt(pow(test.getX()-(x),2) + (pow(test.getY()-(y),2)) + (pow(test.getZ()-(z),2))); //function sqrt((x1-x2)squared + (y1-y2)squared + (z1-z2)squared)
 }

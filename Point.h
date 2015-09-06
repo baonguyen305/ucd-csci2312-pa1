@@ -9,7 +9,7 @@ class Point {
 private:
   double x;
   double y;
-  double z;
+  double z;                     // 3-d grid triangle
 
 public:
   // Constructors
@@ -23,6 +23,8 @@ public:
   void setX(double newX);
   void setY(double newY);
   void setZ(double newZ);
+
+    double distanceTo(Point &test);
 
   // Accessor methods
   double getX();

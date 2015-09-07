@@ -1,3 +1,5 @@
+USING GCC/G++
+
 ## CSCI 2312: Programming Assignment 1
 
 _working with objects_
